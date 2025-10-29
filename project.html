@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Projects - GeometriSatu</title>
+  <link rel="icon" type="image/jpg" href="logo_fav.jpg"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              200: '#DDD6FE',
+              300: '#C4B5FD',
+              400: '#A78BFA',
+              500: '#7F5AF0',
+              600: '#6F3FFF',
+              700: '#5D2EDC',
+              800: '#4B23B5',
+              900: '#3C1C91',
+            },
+            accent: {
+              500: '#2CB67D',
+              600: '#25A06E',
+              700: '#1F8A5F',
+            },
+            background: {
+              DEFAULT: '#16161A',
+              light: '#242629',
+            },
+            text: {
+              DEFAULT: '#FFFFFE',
+              secondary: '#94A1B2',
+            },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="mb-8">
+        <a href="index.html" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 group">
+          <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Back to Home
+        </a>
+      </div>
+      <div class="mb-12">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-2">Our Games</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
+            <img src="thumbnail_edurobots.jpg" alt="Game 1" class="w-full h-40 object-cover">
+            <div class="p-4 flex flex-col flex-grow">
+              <h4 class="font-semibold text-lg">Edurobots</h4>
+              <p class="text-gray-500 text-sm mb-3">Shooter | Mobile</p>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Shoot robots, earn coins, and upgrade your character in this exciting arcade topdown shooter!</p>
+              <div class="mt-auto pt-2">
+                <a href="https://play.google.com/store/apps/details?id=com.geometrisatu.edushooter" target="_blank"
+                  class="bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white text-sm font-medium py-2 px-4 rounded-lg mr-2 transition-all shadow hover:shadow-sm transform hover:-translate-y-px active:translate-y-0">
+                  Download
+                </a>
+                <a href="https://geometrisatu.id/eduproject/detail-edurobots/" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
+            <img src="thumbnail_mathgo.png" alt="Game 2" class="w-full h-40 object-cover">
+            <div class="p-4 flex flex-col flex-grow">
+              <h4 class="font-semibold text-lg">MathGO</h4>
+              <p class="text-gray-500 text-sm mb-3">Math | Mobile</p>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Sharpen your mind with MathGO and become a math wizard!</p>
+              <div class="mt-auto pt-2">
+                <a href="https://play.google.com/store/apps/details?id=com.geometrisatu.mathgo2" target="_blank"
+                  class="bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white text-sm font-medium py-2 px-4 rounded-lg mr-2 transition-all shadow hover:shadow-sm transform hover:-translate-y-px active:translate-y-0">
+                  Download
+                </a>
+                <a href="https://geometrisatu.id/eduproject/detail-mathgo/" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
+            <img src="thumbnail_scienceone.png" alt="Game 3" class="w-full h-40 object-cover">
+            <div class="p-4 flex flex-col flex-grow">
+              <h4 class="font-semibold text-lg">ScienceOne</h4>
+              <p class="text-gray-500 text-sm mb-3">STEM | Mobile</p>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Science One is a fun brain-training game that trains your science know-how!</p>
+              <div class="mt-auto pt-2">
+                <a href="https://play.google.com/store/apps/details?id=com.geometrisatu.scienceone2" target="_blank"
+                  class="bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white text-sm font-medium py-2 px-4 rounded-lg mr-2 transition-all shadow hover:shadow-sm transform hover:-translate-y-px active:translate-y-0">
+                  Download
+                </a>
+                <a href="https://geometrisatu.id/eduproject/detail-superenglish/" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
+            <img src="thumbnail_superenglish.png" alt="Game 4" class="w-full h-40 object-cover">
+            <div class="p-4 flex flex-col flex-grow">
+              <h4 class="font-semibold text-lg">Super English</h4>
+              <p class="text-gray-500 text-sm mb-3">Language | Mobile</p>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Dive in, challenge yourself, and become a word master!</p>
+              <div class="mt-auto pt-2">
+                <a href="https://play.google.com/store/apps/details?id=com.geometrisatu.superenglish2" target="_blank"
+                  class="bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-white text-sm font-medium py-2 px-4 rounded-lg mr-2 transition-all shadow hover:shadow-sm transform hover:-translate-y-px active:translate-y-0">
+                  Download
+                </a>
+                <a href="https://geometrisatu.id/eduproject/detail-scienceone/" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

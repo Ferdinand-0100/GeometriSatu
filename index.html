@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeometriSatu - Game Development & Research</title>
+  <link rel="icon" type="image/jpg" href="logo_fav.jpg"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              200: '#DDD6FE',
+              300: '#C4B5FD',
+              400: '#A78BFA',
+              500: '#7F5AF0',
+              600: '#6F3FFF',
+              700: '#5D2EDC',
+              800: '#4B23B5',
+              900: '#3C1C91',
+            },
+            accent: {
+              500: '#2CB67D',
+              600: '#25A06E',
+              700: '#1F8A5F',
+            },
+            background: {
+              DEFAULT: '#16161A',
+              light: '#242629',
+            },
+            text: {
+              DEFAULT: '#FFFFFE',
+              secondary: '#94A1B2',
+            },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <img src="logo_major.jpg" alt="GeometriSatu Logo" class="h-[58px] w-auto" />
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="#about" class="nav-link text-gray-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 text-sm font-medium">About</a>
+            <a href="#services" class="nav-link text-gray-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 text-sm font-medium">Services</a>
+            <a href="#projects" class="nav-link text-gray-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 text-sm font-medium">Projects</a>
+            <a href="#contact" class="nav-link text-gray-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
+            <a href="team.html" class="nav-link text-gray-500 hover:text-primary-600 inline-flex items-center px-1 pt-1 text-sm font-medium">Team</a>
+          </div>
+        </div>
+
+        <div class="-mr-2 flex items-center sm:hidden">
+          <button type="button" class="mobile-menu-button bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:hidden hidden" id="mobile-menu">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="#about" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-primary-300 hover:text-primary-700 transition duration-150 ease-in-out">About</a>
+        <a href="#services" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-primary-300 hover:text-primary-700 transition duration-150 ease-in-out">Services</a>
+        <a href="#projects" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-primary-300 hover:text-primary-700 transition duration-150 ease-in-out">Projects</a>
+        <a href="#contact" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-primary-300 hover:text-primary-700 transition duration-150 ease-in-out">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-bg text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col lg:flex-row items-center relative z-10">
+      
+      <div class="lg:w-1/2 lg:pr-12">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-display mb-6 leading-tight">
+          Game Development <span class="text-accent-500">Research</span> & 
+          <span class="text-primary-400">Innovation</span>
+        </h1>
+        <p class="text-lg mb-8 text-gray-100 max-w-lg">
+          Bridging academic research and industry applications at Universitas Sumatera Utara. 
+          Creating innovative gaming experiences through research-based development.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="bg-accent-500 hover:bg-accent-600 text-white py-3 px-6 rounded-lg font-medium shadow-md transition duration-300 flex items-center">
+            <span>Our Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#contact" class="bg-transparent hover:bg-white hover:text-primary-700 border-2 border-white py-3 px-6 rounded-lg font-medium transition duration-300 relative z-10">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+        <div class="relative animate-float">
+          <video autoplay muted loop playsinline class="rounded-lg shadow-2xl mx-auto z-10 relative">
+            <source src="edurobots demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>          
+          <div class="absolute -bottom-4 -right-4 w-full h-full rounded-lg z-0" style="background-color: #f5f5f5;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section id="about" class="py-16">
+      <div class="mb-12 text-center">
+        <span class="inline-block px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-4">About Us</span>
+        <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">What is <span class="text-primary-600">GeometriSatu</span></h2>
+        <div class="w-24 h-1 bg-accent-500 mx-auto mb-6 rounded-full"></div>
+        <p class="max-w-3xl mx-auto text-gray-600">Connecting academic research with game industry applications</p>
+      </div>
+      
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="md:w-1/2">
+          <div class="relative">
+            <img src="fakultas.jpg" alt="About GeometriSatu" class="rounded-3xl shadow-xl mb-6 w-full">
+            <div class="bg-white rounded-xl shadow-lg p-6 max-w-md mx-auto md:mx-0 md:absolute md:-bottom-10 md:right-10">
+              <div class="flex items-center space-x-4 mb-4">
+                <div class="flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
+                    <i class="fas fa-lightbulb text-primary-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold">Founded in 2020</h3>
+                  <p class="text-gray-500">At Universitas Sumatera Utara</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="bg-gray-50 p-3 rounded-lg">
+                  <p class="text-3xl font-bold text-primary-600">6</p>
+                  <p class="text-gray-500 text-sm">Active Developers</p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg">
+                  <p class="text-3xl font-bold text-accent-500">4</p>
+                  <p class="text-gray-500 text-sm">Game Projects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 mt-16 md:mt-0">
+          <p class="text-gray-600 leading-relaxed mb-6">
+            GeometriSatu is a game development research company established within the Faculty of Computer Science and Information Technology, Universitas Sumatera Utara. We focus on bridging the gap between academic research and real-world application by transforming game-related research projects into viable commercial products.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            We actively support game development research, innovation, and learning on campus, while maintaining a strong commitment to product-oriented outcomes. Our mission is to cultivate a creative ecosystem where experimental ideas, technical exploration, and gameplay innovation can evolve into impactful, market-ready solutions.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-primary-500">
+              <h3 class="text-xl font-semibold mb-3">Our Vision</h3>
+              <p class="text-gray-600">
+                To become a leading game research and development hub in Indonesia, recognized for innovative solutions that bridge academic research with industry needs.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-accent-500">
+              <h3 class="text-xl font-semibold mb-3">Our Mission</h3>
+              <p class="text-gray-600 mb-3">
+                Transform research into commercial game products and foster innovation.
+              </p>
+              <a href="#services" class="text-primary-600 hover:text-primary-800 inline-flex items-center text-sm font-medium group">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="mt-8 border-t border-gray-200 pt-8">
+            <h3 class="text-xl font-semibold mb-4">Core Values</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center mt-1">
+                  <i class="fas fa-check text-primary-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Innovation</p>
+                  <p class="text-gray-500 text-sm">Exploring new game concepts</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center mt-1">
+                  <i class="fas fa-check text-primary-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Collaboration</p>
+                  <p class="text-gray-500 text-sm">Academia meets industry</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center mt-1">
+                  <i class="fas fa-check text-primary-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Education</p>
+                  <p class="text-gray-500 text-sm">Training future developers</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center mt-1">
+                  <i class="fas fa-check text-primary-600 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Quality</p>
+                  <p class="text-gray-500 text-sm">Excellence in execution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-16">
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4 px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">What We Do</div>
+        <h2 class="text-3xl font-bold">Our Services</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          We offer a comprehensive range of services to support game development research and innovation
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-flask text-primary-600 text-xl"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-3">Research-to-Product Development</h3>
+          <p class="text-gray-600">Transforming game-related research projects into commercial products with market viability.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-code text-primary-600 text-xl"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-3">Prototype Development</h3>
+          <p class="text-gray-600">Designing and building game systems, mechanics, and monetization frameworks.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-graduation-cap text-primary-600 text-xl"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-3">Academic Project Support</h3>
+          <p class="text-gray-600">Supporting student research and campus projects in game development technologies.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-comments text-primary-600 text-xl"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-3">Technical Consultation</h3>
+          <p class="text-gray-600">Providing expert advice on game technology, backend systems, and AI integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-16">
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4 px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Our Work</div>
+        <h2 class="text-3xl font-bold">Featured Projects</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Explore our current and past game development projects
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2">
+            <img src="thumbnail_eduproject.jpg" alt="EduProject" class="w-full h-full object-cover">
+          </div>
+          <div class="md:w-1/2 p-8">
+            <div class="inline-block mb-3 px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Current Project</div>
+            <h3 class="text-2xl font-bold mb-4">EduProject</h3>
+            <p class="text-gray-600 mb-6">
+              At GeometriSatu Studio, we're pioneering a new method in the development of educational games. Instead of developing serious games, EduProject aims to blend 
+              <span class="text-accent-500">engaging gameplay</span> with 
+              <span class="text-primary-400">educational incentives</span> by rewarding educational progress with gameplay rewards. By integrating these two discrete elements, EduProject manages to achieve compelling gameplay unrestricted by educational elements while also providing educational content for players.
+            </p>
+            <div class="flex gap-4 mb-6">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">Unity Engine</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">Adaptive Learning</span>
+              <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-medium">Mobile</span>
+            </div>
+            <a href="project.html" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-lg font-medium transition duration-300">
+              View Project
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16">
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4 px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Get In Touch</div>
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Have questions about our research or services? We'd love to hear from you!
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-12">
+        <div class="w-full max-w-2xl">
+          <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-map-marker-alt text-primary-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Address</h4>
+                  <p class="text-gray-600">Jalan Setia Budi no. 238<br>Ruko G, Tanjung Sari<br>Medan, North Sumatra, Indonesia</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-envelope text-primary-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Email</h4>
+                  <p class="text-gray-600">hi@geometrisatu.id</p>
+                  <p class="text-gray-600">hi.geometrisatu@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-phone-alt text-primary-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Phone</h4>
+                  <p class="text-gray-600">+62 813-6160-6734</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <img src="logo_major.jpg" alt="GeometriSatu Logo" class="h-10 w-auto">
+          <p class="mt-4 text-gray-400">
+            Bridging academic research and industry applications in game development at Universitas Sumatera Utara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="border-t border-gray-800 mt-1 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 GeometriSatu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team - GeometriSatu</title>
+  <link rel="icon" type="image/jpg" href="logo_fav.jpg"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              200: '#DDD6FE',
+              300: '#C4B5FD',
+              400: '#A78BFA',
+              500: '#7F5AF0',
+              600: '#6F3FFF',
+              700: '#5D2EDC',
+              800: '#4B23B5',
+              900: '#3C1C91',
+            },
+            accent: {
+              500: '#2CB67D',
+              600: '#25A06E',
+              700: '#1F8A5F',
+            },
+            background: {
+              DEFAULT: '#16161A',
+              light: '#242629',
+            },
+            text: {
+              DEFAULT: '#FFFFFE',
+              secondary: '#94A1B2',
+            },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-8">
+        <a href="index.html" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 group">
+          <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Back to Home
+        </a>
+      </div>
+    <section id="team" class="py-16">
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4 px-4 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Our People</div>
+        <h2 class="text-3xl font-bold">Meet The Team</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Our talented team combines academic expertise with industry experience
+        </p>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-2">Owner</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-6 max-w-sm mx-auto">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="owner.jpg" alt="Owner" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold">Dr. Jos Timanta Tarigan S.Kom., M.Sc</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <p class="text-gray-500 text-sm mt-1">
+                Lecturer @ Department of Computer Science,<br>
+                Faculty of Computer Science and Information Technology,<br>
+                Universitas Sumatera Utara
+              </p>
+              <div class="mt-3 text-sm text-primary-600 font-medium flex items-center space-x-2">
+                <a href="https://s.id/6lrfP" class="hover:underline">Profile</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://s.id/1ftSK" class="hover:underline">Publication</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://s.id/1Yxfa" class="hover:underline">YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="text-xl font-semibold mb-6 border-b pb-2">Current Members</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <div class="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="alex.jpg" alt="Team Member" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4">
+              <h4 class="font-semibold">Alexander Yuanata</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="http://www.linkedin.com/in/alexander-yuanata" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/alexanderyuanata" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <span class="relative group text-gray-500 hover:text-primary-600 cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 text-xs text-white bg-gray-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 z-10 whitespace-nowrap">
+                    yuanataalex@gmail.com
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="Apalah26.jpg" alt="Team Member" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold">Elin Betsey Br Ginting</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="ferdinand.jpg" alt="Team Member" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4">
+              <h4 class="font-semibold">Ferdinand</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="https://www.linkedin.com/in/ferdinand-ferdinand-bb2636275" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ferdinand-0100" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <span class="relative group text-gray-500 hover:text-primary-600 cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 text-xs text-white bg-gray-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 z-10 whitespace-nowrap">
+                    cenferdinand@gmail.com
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="Apalah26.jpg" alt="Team Member" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4">
+              <h4 class="font-semibold">Revita Kezia Pandiangan</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <span class="relative group text-gray-500 hover:text-primary-600 cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 text-xs text-white bg-gray-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 z-10 whitespace-nowrap">
+                    revitakezia@gmail.com
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="Apalah26.jpg" alt="Team Member" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4">
+              <h4 class="font-semibold">Fernandez</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <span class="relative group text-gray-500 hover:text-primary-600 cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 text-xs text-white bg-gray-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 z-10 whitespace-nowrap">
+                    #
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105">
+            <img src="Apalah26.jpg" alt="Team Member" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4">
+              <h4 class="font-semibold">Kevin Maverick</h4>
+              <div class="my-2 border-t border-gray-200"></div>
+              <div class="flex mt-3 space-x-2">
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-primary-600"><i class="fab fa-github"></i></a>
+                <span class="relative group text-gray-500 hover:text-primary-600 cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 text-xs text-white bg-gray-900 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 z-10 whitespace-nowrap">
+                    #
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="past-members-section py-8">
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold mb-6 border-b pb-2">Past Members</h3>
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Ahmad Ghalib Athariq</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Felix</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Lidya Alya Zahra</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Lorenzo Liunardo</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Muhammad Daffa Shidiq</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Muhammad Putra H. Pane</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Petrus M. H. Tampubolon</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Satria Nardo Dionysius</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Stephen J. Rusli</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Venerio Uvandy</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Mario Jeconiah Purba</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Muhammad Rizky Fadhillah</p>
+              </div>
+              <div class="member-button bg-gray-50 border border-gray-100 px-4 py-3 rounded-lg shadow-sm hover:shadow-inner hover:bg-gray-100 transition-all duration-200 transform hover:-translate-y-px hover:translate-x-px flex items-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary-500 mr-3"></div>
+                <p class="font-medium text-gray-800">Nasywa Zavira Lubis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
